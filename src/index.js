@@ -8,28 +8,9 @@ import Webcam from "react-webcam";
 const tf = require('@tensorflow/tfjs');
 //const webcamElement = document.getElementById('webcam');
     
- const weights = "https://raw.githubusercontent.com/mdhasanali3/object-detection-with-yolov5-tfjs/master/public/web_model/model.json";
- //'web_model/model.json';
- 
-  //'C:/Users/hasan/Downloads/bs 23 workshop/supershop/yolov5/yolov5s_saved_model/keras_metadata.pb');
-//'C:/Users/hasan/Downloads/bs 23 workshop/ss/tfj/public/web_model/model.json';
- 
+const weights = "https://raw.githubusercontent.com/raisa314/yolov5_object_detection/master/public/web_model/model.json";
 
-/*
-'Alpro-Fresh-Soy-Milk','Arla-Medium-Fat-Milk','Arla-Mild-Vanilla-Yoghurt','Arla-Natural-Yoghurt',
-              'Arla-Sour-Milk','Bravo-Orange-Juice','Garant-Ecological-Medium-Fat-Milk','Oatly-Natural-Oatghurt',
-              'Oatly-Oat-Milk','Tropicana-Apple-Juice','Valio-Vanilla-Yoghurt','Yoggi-Strawberry-Yoghurt',
-
-*/
-const names = ['person','bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat', 'traffic light',
-               'fire hydrant', 'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow',
-               'elephant', 'bear', 'zebra', 'giraffe', 'backpack', 'umbrella', 'handbag', 'tie', 'suitcase', 'frisbee',
-               'skis', 'snowboard', 'sports ball', 'kite', 'baseball bat', 'baseball glove', 'skateboard', 'surfboard',
-               'tennis racket', 'bottle', 'wine glass', 'cup', 'fork', 'knife', 'spoon', 'bowl', 'banana', 'apple',
-               'sandwich', 'orange', 'broccoli', 'carrot', 'hot dog', 'pizza', 'donut', 'cake', 'chair', 'couch',
-               'potted plant', 'bed', 'dining table', 'toilet', 'tv', 'laptop', 'mouse', 'remote', 'keyboard', 'cell phone',
-               'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock', 'vase', 'scissors', 'teddy bear',
-               'hair drier', 'toothbrush']
+const names = ['Brand: C, Product: C1','Brand: C, Product: C2','Brand: C, Product: C3']
 const map = new Map();
 
 for (var i = 0; i < 100; ++i) {
@@ -406,15 +387,7 @@ return (
  }
 
 </div> 
-
-
-
-
-
-
 </>
-
-
  ); 
    
   }
@@ -422,5 +395,3 @@ return (
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-
-
