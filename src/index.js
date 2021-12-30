@@ -8,7 +8,7 @@ import Webcam from "react-webcam";
 const tf = require('@tensorflow/tfjs');
 //const webcamElement = document.getElementById('webcam');
     
-const weights = "https://raw.githubusercontent.com/raisa314/yolov5_object_detection/master/public/web_model/model.json";
+const weights = "https://raw.githubusercontent.com/raisa314/yolov5_object_detection/main/public/best_web_model/model.json";
 
 const names = ['Brand: C, Product: C1','Brand: C, Product: C2','Brand: C, Product: C3']
 const map = new Map();
