@@ -1,1 +1,1 @@
-{"names": ["Brand: C- Product: C1", "Brand: C- Product: C2", "Brand: C- Product: C3"], "nc": 3, "train": "Box-2/train/images", "val": "Box-2/valid/images"}
+{"names": ["Brand: C- Product: C1", "Brand: C- Product: C2", "Brand: C- Product: C3"], "nc": 3, "train": "Products-2/train/images", "val": "Products-2/valid/images"}
